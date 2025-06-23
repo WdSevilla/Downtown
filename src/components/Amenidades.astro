@@ -1,0 +1,86 @@
+---
+import CarruselAmenidades from "../components/CarruselAmenidades.astro";
+
+import LogoNuwa from "../assets/NUWAlog.png";
+import logoMariaBonita from "../assets/logomaria.png";
+import LogoSelvaNegra from "../assets/logoSelvaNegra.png";
+import LogoVentanita from "../assets/laventanita.png";
+import logoPintoeGallo from "../assets/logoDesayuno.png";
+
+import cenaMariaBonita from "../assets/cenaMariaBonita.jpg";
+import comidaMariaBonita from "../assets/chateaubriand.jpg";
+import salonMariaBonita from "../assets/salonRestaurante.jpg";
+
+import eventoSelvaNegra from "../assets/selvaAmenidades.jpg";
+import coctelSelvaNegra from "../assets/coctelSelvaNegra.jpg";
+import barraSelvaNegra from "../assets/barraSelvaNegra.jpg";
+
+import fotoNuwa from "../assets/nuwa.png";
+import Nuwa2 from "../assets/NUWAGallery.jpg";
+import Nuwa3 from "../assets/NUWAGallery2.jpg";
+
+import FotoVentanita from "../assets/mariaAmanidades.jpg";
+import choripan from "../assets/choripan.jpg";
+import hamburguesaMariaBonita from "../assets/hamburguesaMB.jpg";
+
+import desayunoTipico from "../assets/desayunoTipico.jpg";
+import desayunoFrutas1 from "../assets/desayunoFrutas.jpg";
+import desayunoFrutas2 from "../assets/frutas.jpg";
+
+const restaCarrusel = [salonMariaBonita, cenaMariaBonita, comidaMariaBonita];
+const selvaCarrusel = [eventoSelvaNegra, barraSelvaNegra,coctelSelvaNegra];
+const NuwaCarrusel = [fotoNuwa, Nuwa2, Nuwa3];
+const VentanitaCarrusel = [hamburguesaMariaBonita,FotoVentanita, choripan];
+const DesayunoCarrusel = [desayunoTipico, desayunoFrutas1, desayunoFrutas2];
+---
+
+<main>
+  <CarruselAmenidades
+    titulo="María Bonita Steak House"
+    descripcion="María Bonita Steak House es una fusión de gastronomía, entretenimiento, pasión y arte. Aquí, cada platillo se convierte en un espectáculo. Disfruta de cortes de carne premium cocinados a la perfección en brasas de carbón natural, flambé en mesa con postres, cafés y cócteles, experiencias con fuego, música en vivo. Sumérgete en una experiencia sensorial única en el corazón de La Fortuna. ¡Te garantizamos calidad y una auténtica experiencia!."
+    horario="Lunes a Domingo<br/>11:30am a 10:30pm"
+    logo={logoMariaBonita}
+    imagenesCarrusel={restaCarrusel}
+    linkBoton="https://qrfy.io/p/iLG_cBukNI"
+    textoBoton="Menú"
+    bg="bg-fondog"
+  />
+
+  <CarruselAmenidades
+    titulo="Selva Negra"
+    descripcion="Disfruta de sabores exóticos, mixología creativa, selectos vinos y experiencias en un viaje sensorial inspirado en la magia de la selva tropical nocturna de Costa Rica. Ofrecemos noches temáticas de mixología, catas de vinos con sommelier invitados, maridajes con gastronomía elaborada por nuestro chef y eventos privados para quienes buscan una experiencia personalizada."
+    horario="Lunes a Domingo<br/>12:00pm a 12:00am"
+    logo={LogoSelvaNegra}
+    imagenesCarrusel={selvaCarrusel}
+    reverse={true}
+  />
+
+  <CarruselAmenidades
+    titulo="Pinto e' Gallo"
+    descripcion="Comienza tu día con el mejor sabor en Pinto e' Gallo. Disfruta de nuestro desayuno estilo buffet, donde encontrarás una variedad irresistible de opciones frescas. Ideal para comenzar el día con energía y sin prisas. ¡Ven y disfruta de un desayuno completo y delicioso!"
+    horario="Lunes a Domingo<br/>07:00am a 10:00am"
+    logo={logoPintoeGallo}
+    imagenesCarrusel={DesayunoCarrusel}
+    bg="bg-fondog"
+  />
+
+  <CarruselAmenidades
+    titulo="La Ventanita de María Bonita"
+    descripcion="En La Ventanita de María Bonita, sabemos que tu tiempo es valioso y tu apetito también. Somos una ventanita de comida rápida a la parrilla, donde cada plato se prepara al momento con ingredientes frescos y de la mejor calidad. Disfruta de sabores auténticos y jugosos, cocinados a la perfección en la parrilla, listos para llevar y sin largas esperas. ¡Rapidez, sabor y calidad en cada bocado!"
+    horario="Lunes a Domingo<br/>12:00pm a 12:00am"
+    logo={LogoVentanita}
+    imagenesCarrusel={VentanitaCarrusel}
+    linkBoton="https://online.flippingbook.com/view/179568887/"
+    textoBoton="Menú"
+    reverse={true}
+  />
+
+  <CarruselAmenidades
+    titulo="Nuwa Art Gallery"
+    descripcion="Es un espacio vibrante dedicado a la celebración del arte y la cultura costarricense. Presentamos obras de artistas locales, ofreciendo una experiencia única que conecta a los visitantes con la creatividad y la inspiración de nuestra tierra. ¡Descubre y apoya el arte costarricense en su máxima expresión en Nuwa Gallery!"
+    horario="Lunes a Domingo<br/>06:00am a 10:00pm"
+    logo={LogoNuwa}
+    imagenesCarrusel={NuwaCarrusel}
+    bg="bg-fondog"
+  />
+</main>

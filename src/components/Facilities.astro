@@ -5,32 +5,48 @@ import bar from "../assets/bar.png";
 import pool from "../assets/pool.png";
 import wifi from "../assets/wifi.png";
 import areaPiscina from "../assets/AreaPiscina.png";
-import bathroom from "../assets/bathroom.jpg";
+import volcanArenal from "../assets/volcanArenal.jpg";
+import fortunacentro from "../assets/fortunaCentro.jpg";
+import logoEslogan from "../assets/logoSloganEsp.png";
+
+export const aboutCarrusel = [areaPiscina, volcanArenal, fortunacentro];
 ---
 
-<section id="facilidades"  class="bg-fondo sm:w-full">
+<section id="facilidades" class="bg-fondo sm:w-full">
   <div>
     <div class="text-center p-6">
-      <h2 class="lg:text-5xl text-3xl font-bold font-Lobster text-titulo">Facilidades Principales</h2>
-   
+      <h2 class="lg:text-5xl text-3xl font-bold font-Lobster text-titulo">
+        Facilidades Principales
+      </h2>
+
+      <h2 class="lg:text-[1.5rem] text-1xl font-BadScript text-titulo mt-4">
+        "En el corazón de las experiencias"
+      </h2>
     </div>
     <div
       class="sm:flex flex-row space-y-5 sm:space-y-0 sm:p-6 sm:space-x-8 p-4"
     >
       <div class="flex flex-col items-center text-center">
         <Image src={car} alt="parking" class="h-12 w-12" />
-        <p class="text-center font-Montserrat font-bold text-base text-titulo p-4">
+        <p
+          class="text-center font-Montserrat font-bold text-base text-titulo p-4"
+        >
           Parqueo Privado
         </p>
         <p class="font-Montserrat text-justify text-texto">
           Disfrute de un espacio seguro para su vehículo mientras explora La
-          Fortuna sin preocupaciones. Ofrecemos parqueo gratuito 24 horas con seguridad privada para su comodidad, además de estación de carga
+          Fortuna sin preocupaciones. Ofrecemos parqueo gratuito 24 horas con
+          seguridad privada para su comodidad, además de estación de carga
           eléctrica.
         </p>
       </div>
       <div class="flex flex-col items-center text-center">
         <Image src={wifi} alt="wifi" class="h-12 w-12" />
-        <p class="text-center font-Montserrat font-bold text-base text-titulo p-4">WiFi</p>
+        <p
+          class="text-center font-Montserrat font-bold text-base text-titulo p-4"
+        >
+          WiFi
+        </p>
         <p class="font-Montserrat text-justify text-texto">
           Disfrute de Wi-Fi de alta velocidad en todo el hotel. Manténgase
           conectado para compartir momentos, planificar actividades o trabajar
@@ -39,18 +55,25 @@ import bathroom from "../assets/bathroom.jpg";
       </div>
       <div class="flex flex-col items-center text-center">
         <Image src={bar} alt="bar" class="h-12 w-12" />
-        <p class="text-center font-Montserrat font-bold text-base text-titulo p-4">
+        <p
+          class="text-center font-Montserrat font-bold text-base text-titulo p-4"
+        >
           Bar & Restaurante
         </p>
         <p class="font-Montserrat text-justify text-texto">
           Una experiencia gastronómica excepcional en el corazón de La Fortuna.
           Disfrute de cortes de carne de alta calidad, mariscos frescos,
-          opciones vegetarianas y cócteles, todo en un ambiente acogedor. ¡Le esperamos!
+          opciones vegetarianas y cócteles, todo en un ambiente acogedor. ¡Le
+          esperamos!
         </p>
       </div>
       <div class="flex flex-col items-center text-center">
         <Image src={pool} alt="pool" class="h-12 w-12" />
-        <p class="text-center font-Montserrat font-bold text-base text-titulo p-4">Piscina</p>
+        <p
+          class="text-center font-Montserrat font-bold text-base text-titulo p-4"
+        >
+          Piscina
+        </p>
         <p class="font-Montserrat text-justify text-texto">
           Relájese en nuestra piscina, ideal para descansar después de un día de
           aventuras. Disfrute del sol y del ambiente tropical mientras se
@@ -58,45 +81,93 @@ import bathroom from "../assets/bathroom.jpg";
         </p>
       </div>
     </div>
-  </section>
+  </div>
 
   <section class="bg-fondog">
     <div
       id="About"
-      class="sm:grid sm:grid-cols-2 sm:items-center flex flex-col-reverse mt-8"
+      class="sm:grid sm:grid-cols-2 sm:items-center flex flex-col-reverse lg:p-20 p-10"
     >
       <div class="p-4">
-        <p class="lg:text-5xl text-3xl font-bold font-Lobster text-titulo ">Sobre Nosotros</p>
-      
-        <p class="font-Montserrat text-texto lg:text-base text-sm pt-4">
-          La Fortuna Downtown Boutique Hotel es el hotel más
-          céntrico de La Fortuna, Costa Rica, ofreciéndote una
-          experiencia única con comodidad y estilo. Disfruta de
-          fácil acceso a atracciones como el Volcán Arenal, la
-          Catarata Río Fortuna y aguas termales. Entendemos
-          que cada viajero es único, por eso brindamos servicios
-          personalizados y experiencias inolvidables, ya sea explorando
-          la naturaleza, disfrutando de actividades o
-          relajándote. Además, nuestro equipo de expertos locales
-          te ayudará a planificar tu aventura y descubrir la
-          esencia de este destino icónico. ¡Tu escapada perfecta
-          comienza aquí!
+        <p class="lg:text-5xl text-3xl font-bold font-Lobster text-titulo">
+          Sobre Nosotros
         </p>
-      
-      </div>
-      <div>
-        <div
-          class="sm:pl-24 2xl:pl-15 sm:p-10 p-4 flex justify-center sm:items-center sm:float-right"
-        >
-            <Image
-              src={areaPiscina}
-              alt="Area Piscina Downtown"
-              class=" w-full h-[350px] object-cover lg:rounded-br-4xl lg:rounded-tl-4xl rounded-br-4xl rounded-tl-4xl"
-            />
 
+        <p class="font-Montserrat text-texto lg:text-base text-sm pt-4">
+          La Fortuna Downtown Boutique Hotel es el hotel más céntrico de La
+          Fortuna, Costa Rica, ofreciéndote una experiencia única con comodidad
+          y estilo. Disfruta de fácil acceso a atracciones como el Volcán
+          Arenal, la Catarata Río Fortuna y aguas termales. Entendemos que cada
+          viajero es único, por eso brindamos servicios personalizados y
+          experiencias inolvidables, ya sea explorando la naturaleza,
+          disfrutando de actividades o relajándote. Además, nuestro equipo de
+          expertos locales te ayudará a planificar tu aventura y descubrir la
+          esencia de este destino icónico. ¡Tu escapada perfecta comienza aquí!
+        </p>
+
+        <Image
+          class="w-[150px] lg:w-[190px] pt-2"
+          src={logoEslogan}
+          alt="En el corazón de las experiencias"
+        />
+      </div>
+
+      <div class="relative w-full overflow-hidden">
+        <div
+          id="carousel"
+          class="flex transition-transform duration-500 ease-in-out w-full"
+        >
+          {
+            aboutCarrusel.map((img, index) => (
+              <Image
+                src={img}
+                alt="Area Piscina Downtown"
+                class="min-w-full h-[350px] object-cover lg:rounded-br-4xl lg:rounded-tl-4xl rounded-br-4xl rounded-tl-4xl"
+              />
+            ))
+          }
+        </div>
+
+        <div id="indicators" class="flex justify-center gap-2 mt-4">
+          {
+            aboutCarrusel.map((_, index) => (
+              <button
+                type="button"
+                class="w-2 h-2 rounded-full bg-fondog transition-all duration-300"
+                data-index={index}
+              />
+            ))
+          }
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+  <script>
+    const carousel = document.getElementById("carousel");
+    const indicators = document.getElementById("indicators")?.children;
+    const totalSlides = carousel.children.length;
+    let currentSlide = 0;
 
+    function updateCarousel() {
+      carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+      Array.from(indicators).forEach((dot, index) => {
+        dot.classList.toggle("bg-gray-800", index === currentSlide);
+        dot.classList.toggle("bg-gray-400", index !== currentSlide);
+
+        dot.addEventListener("click", () => {
+          currentSlide = index;
+          updateCarousel();
+        });
+      });
+    }
+
+  
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      updateCarousel();
+    }, 3000);
+
+    updateCarousel();
+  </script>
+</section>

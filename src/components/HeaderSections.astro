@@ -11,12 +11,12 @@ import usa from "../assets/ingles.png";
     class="bg-white text-white fixed w-full z-20 top-0 left-0 transition-all duration-300 flex justify-center"
   >
     <div
-      class=" flex items-center justify-between mx-auto p-4 relative h-[100px] lg:h-[80px]"
+      class="flex items-center justify-between mx-auto p-4 relative h-[100px] lg:h-[80px]"
     >
-      <div class="absolute bottom-0 left-0 lg:w-[83%] h-[2px] bg-white/90"/>
+      <div class="absolute bottom-0 left-0 lg:w-[83%] h-[2px] bg-white/90">
+      </div>
       <!-- Logo -->
       <a href="/" class="flex items-center">
-       
         <Image
           id="logon"
           src={logoNegroDowntown}
@@ -42,17 +42,17 @@ import usa from "../assets/ingles.png";
 
       <!-- Botón de Reservar y Menú hamburguesa para móviles -->
       <div class="flex md:order-2 space-x-3 rtl:space-x-reverse">
-        <a
+         <!--<a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.simplebooking.it/ibe/hotelbooking/search?hid=9184&lang=ES"
+          href="https://www.simplebooking.it/ibe2/hotel/9184/?hid=9184&lang=ES&cur=USD"
         >
           <button
-            class="mx-6 w-[100px] h-[40px] md:w-[140px] md:h-[45px] bg-botones hover:bg-red-700 rounded-full text-white lg:text-base md:text-sm text-xs font-semibold"
+            class="text-white bg-botones hover:bg-red-700 font-semibold text-sm font-Montserrat px-4 py-2 rounded-lg w-[13rem]"
           >
-            Reserve Ahora
+            Consultar disponibilidad
           </button>
-        </a>
+        </a>-->
 
         <button
           data-collapse-toggle="navbar-sticky"
@@ -62,20 +62,15 @@ import usa from "../assets/ingles.png";
           aria-expanded="false"
         >
           <span class="sr-only">Open main menu</span>
-          
-          <Image
-            class=""
-            id="burger-black"
-            src={burgerb}
-            alt="menu-black"
-          />
+
+          <Image class="" id="burger-black" src={burgerb} alt="menu-black" />
         </button>
       </div>
 
       <!-- Menú de navegación -->
       <div
         id="navbar-sticky"
-        class="hidden tems-center justify-between md:w-auto md:order-1 flex-col md:flex md:flex-row absolute top-[100%] left-0 w-full bg-white text-black lg:text-black shadow-md md:shadow-none  md:static z-50 transition-all duration-300"
+        class="hidden tems-center justify-between md:w-auto md:order-1 flex-col md:flex md:flex-row absolute top-[100%] left-0 w-full bg-white text-black lg:text-black shadow-md md:shadow-none md:static z-50 transition-all duration-300"
       >
         <ul
           class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 px-6 py-4 md:py-0 font-medium"
@@ -130,7 +125,6 @@ import usa from "../assets/ingles.png";
 </main>
 
 <script>
- 
   // Desplazamiento suave para los enlaces
   document
     .querySelector('a[href="#About"]')

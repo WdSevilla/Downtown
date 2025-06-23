@@ -95,12 +95,12 @@ export default function ImageGallery() {
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://wa.me/message/EPD5JVA2SLQ2D1"
+                        href="https://www.simplebooking.it/ibe2/hotel/9184/?hid=9184&lang=ES&cur=USD"
                       >
                         <button
-                          className="text-white bg-botones hover:bg-red-700 font-semibold text-sm font-Montserrat px-4 py-2 rounded-lg w-[10rem]  "
+                          className="text-white bg-botones hover:bg-red-700 font-semibold text-sm font-Montserrat px-4 py-2 rounded-lg w-[13rem]  "
                         >
-                          Reserve ahora
+                          Consultar disponibilidad
                         </button>
                       </a>
 
